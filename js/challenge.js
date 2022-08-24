@@ -87,11 +87,14 @@ pause.addEventListener('click',()=>{
     plus.disabled = true;
     minus.disabled = true;
     heart.disabled = true;
+    pause.innerText = 'resume';
     shutOff = true;
   } else if (shutOff === true){
     plus.disabled = false;
     minus.disabled = false;
     heart.disabled = false;
+    pause.innerText = 'pause';
     shutOff = false;
+    
   }
 })
